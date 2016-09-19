@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tabelas\Avaliacao.cs" />
+    <Compile Include="Tabelas\Base.cs" />
     <Compile Include="Tabelas\Comentario.cs" />
     <Compile Include="Tabelas\Categoria.cs" />
     <Compile Include="Tabelas\Usuario.cs" />
