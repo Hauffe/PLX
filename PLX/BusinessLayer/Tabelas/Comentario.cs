@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayer
+namespace BusinessLayer.Tabelas
 {
     internal class Comentario : Base
     {

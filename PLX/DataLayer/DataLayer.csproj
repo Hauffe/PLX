@@ -50,12 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\SqlServerDao.cs" />
-    <Compile Include="Tabelas\Avaliacao.cs" />
     <Compile Include="Tabelas\Base.cs" />
-    <Compile Include="Tabelas\Comentario.cs" />
-    <Compile Include="Tabelas\Categoria.cs" />
-    <Compile Include="Tabelas\Usuario.cs" />
-    <Compile Include="Tabelas\Anuncio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
