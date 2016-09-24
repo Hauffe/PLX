@@ -9,14 +9,9 @@ using System.Threading.Tasks;
 
 namespace DataLayer.DAO
 {
-    class SqlServerDao : DbContext
+    public class SqlServerDao : DbContext
     {
-        public DbSet<Anuncio> DbSetAnuncio { get; set; }
-        public DbSet<Categoria> DbSetCategoria { get; set; }
-        public DbSet<Comentario> DbSetComentario { get; set; }
-        public DbSet<Usuario> DbSetUsuario { get; set; }
-        public DbSet<Avaliacao> DbSetAvaliacao { get; set; }
-
+        
         static SqlServerDao()
         {
             //configurar migraçao automatica
