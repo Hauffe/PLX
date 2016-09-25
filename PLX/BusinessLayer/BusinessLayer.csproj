@@ -53,7 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BO\AnuncioBO.cs" />
+    <Compile Include="BO\AvaliacaoBO.cs" />
     <Compile Include="BO\BaseBO.cs" />
+    <Compile Include="BO\CategoriaBO.cs" />
+    <Compile Include="BO\ComentarioBO.cs" />
+    <Compile Include="BO\UsuarioBO.cs" />
     <Compile Include="DAO\SqlServerDao.cs" />
     <Compile Include="DTO\AnuncioDto.cs" />
     <Compile Include="DTO\AvaliacaoDto.cs" />
