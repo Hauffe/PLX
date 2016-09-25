@@ -8,19 +8,14 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.BO
 {
-    internal class BaseBO
+    internal abstract class BaseBO
     {
-        public SqlServerDao Dao { get; set; }
+        protected SqlServerDao Dao { get; set; }
 
         protected BaseBO(SqlServerDao dao)
         {
             Dao = dao;
         }
 
-        static BaseBO()
-        {
-            // terminar de mapear os Dtos
-            //Mapper.Initialize()
-        }
     }
 }
