@@ -17,5 +17,6 @@ namespace BusinessLayer.BO
             Dao = dao;
         }
 
+        //inicializar AutoMapper
     }
 }
