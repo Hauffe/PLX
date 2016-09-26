@@ -16,6 +16,8 @@ namespace BusinessLayer.BO
         public void SalvarCategoria(CategoriaDto categoria)
         {
             var tabela = AutoMapper.Mapper.Map<Categoria>(categoria);
+            tabela.DataAtualizacao = DateTime.Now;
+            tabela.DataCriacao = DateTime.Now;
             Dao.Inserir(tabela);
         }
 
