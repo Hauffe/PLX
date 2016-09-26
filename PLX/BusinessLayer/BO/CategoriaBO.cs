@@ -24,6 +24,7 @@ namespace BusinessLayer.BO
         public void AtualizarCategoria(CategoriaDto categoria)
         {
             var tabela = AutoMapper.Mapper.Map<Categoria>(categoria);
+            tabela.DataAtualizacao = DateTime.Now;
             Dao.Atualizar(tabela);
         }
 
