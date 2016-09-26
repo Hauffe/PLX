@@ -10,6 +10,10 @@ namespace BusinessLayer.Tabelas
 {
     internal class Usuario : Base
     {
+        public Usuario()
+        {
+            Comentarios = new List<Comentario>();
+        }
         [Required]
         public string Nome { get; set; }
         public string Contato { get; set; }
@@ -19,7 +23,7 @@ namespace BusinessLayer.Tabelas
         [Required]
         public string Senha { get; set; }
         public virtual List<Avaliacao> Avaliacoes { get; set; }
-        public virtual List<Comentario> Comentarios { get; set; }
+        public virtual ICollection<Comentario> Comentarios { get; set; }
         public virtual List<Anuncio> Anuncios { get; set; }
     }
 }

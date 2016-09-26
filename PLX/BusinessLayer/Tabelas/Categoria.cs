@@ -10,6 +10,7 @@ namespace BusinessLayer.Tabelas
 {
     internal class Categoria : Base
     {
+
         [Required]
         public string Nome { get; set; }
         [Required]

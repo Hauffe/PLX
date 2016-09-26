@@ -1,4 +1,5 @@
-﻿using DataLayer.Tabelas;
+﻿using DataLayer.Migrations;
+using DataLayer.Tabelas;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -15,7 +16,7 @@ namespace DataLayer.DAO
         static SqlServerDao()
         {
             //configurar migraçao automatica
-            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<SqlServerDao, Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SqlServerDao, Configuration>());
         }
 
         public SqlServerDao() : base("PLX")

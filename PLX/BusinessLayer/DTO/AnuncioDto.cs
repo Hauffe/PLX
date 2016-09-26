@@ -15,6 +15,6 @@ namespace BusinessLayer.DTO
         public int Status { get; set; }
         public UsuarioDto UsuarioDto { get; set; }
         public List<ComentarioDto> ComentariosDto { get; set; }
-        public CategoriaDto Categoria { get; set; }
+        public CategoriaDto CategoriaDto { get; set; }
     }
 }
