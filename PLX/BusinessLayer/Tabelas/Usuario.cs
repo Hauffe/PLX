@@ -14,13 +14,10 @@ namespace BusinessLayer.Tabelas
         {
             Comentarios = new List<Comentario>();
         }
-        [Required]
         public string Nome { get; set; }
         public string Contato { get; set; }
         public int Telefone { get; set; }
-        [Required]
         public string Email { get; set; }
-        [Required]
         public string Senha { get; set; }
         public virtual List<Avaliacao> Avaliacoes { get; set; }
         public virtual ICollection<Comentario> Comentarios { get; set; }

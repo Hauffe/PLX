@@ -10,9 +10,7 @@ namespace BusinessLayer.Tabelas
 {
     internal class Avaliacao : Base
     {
-        [Required]
         public Double Nota { get; set; }
-        [Required]
         public virtual Usuario Usuario { get; set; }
     }
 }

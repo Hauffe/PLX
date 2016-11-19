@@ -10,10 +10,8 @@ namespace BusinessLayer.Tabelas
 {
     internal class Comentario : Base
     {
-        [Required]
         public string Conteudo { get; set; }
         public virtual Usuario Usuario { get; set; }
-        [Required]
         public virtual Anuncio Anuncio { get; set; }
     }
 }

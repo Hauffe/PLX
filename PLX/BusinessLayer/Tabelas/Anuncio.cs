@@ -12,16 +12,12 @@ namespace BusinessLayer.Tabelas
     {
 
         public String Descricao { get; set; }
-        [Required]
         public String Titulo { get; set; }
-        [Required]
         public Double Preco { get; set; }
         public String Imagem { get; set; }
         public int Status { get; set; }
-        [Required]
         public virtual Usuario Usuario { get; set; }
         public virtual List<Comentario> Comentarios { get; set; }
-        [Required]
         public virtual Categoria Categoria { get; set; }
 
 
