@@ -65,9 +65,13 @@
     <Compile Include="DTO\CategoriaDto.cs" />
     <Compile Include="DTO\ComentarioDto.cs" />
     <Compile Include="DTO\UsuarioDto.cs" />
+    <Compile Include="Facades\AvaliacaoFacade.cs" />
     <Compile Include="Facades\CategoriaFacade.cs" />
+    <Compile Include="Facades\ComentarioFacade.cs" />
+    <Compile Include="Facades\UsuarioFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tabelas\Anuncio.cs" />
+    <Compile Include="Facades\AnuncioFacade.cs" />
     <Compile Include="Tabelas\Avaliacao.cs" />
     <Compile Include="Tabelas\Categoria.cs" />
     <Compile Include="Tabelas\Comentario.cs" />

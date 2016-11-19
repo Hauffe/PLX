@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\SqlServerDao.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Tabelas\Base.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

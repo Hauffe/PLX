@@ -16,12 +16,15 @@ namespace BusinessLayer.BO
         public void SalvarAnuncio(AnuncioDto anuncio)
         {
             var tabela = AutoMapper.Mapper.Map<Anuncio>(anuncio);
+            tabela.DataAtualizacao = DateTime.Now;
+            tabela.DataCriacao = DateTime.Now;
             Dao.Inserir(tabela);
         }
 
         public void AtualizarAnuncio(AnuncioDto anuncio)
         {
             var tabela = AutoMapper.Mapper.Map<Anuncio>(anuncio);
+            tabela.DataAtualizacao = DateTime.Now;
             Dao.Atualizar(tabela);
         }
 
