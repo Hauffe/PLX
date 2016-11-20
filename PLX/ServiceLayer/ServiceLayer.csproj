@@ -78,14 +78,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Contracts\ServiceUsuario.svc" />
+    <Content Include="IServiceUsuario.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\ServiceUsuario.svc.cs">
-      <DependentUpon>ServiceUsuario.svc</DependentUpon>
+    <Compile Include="IIServiceUsuario.cs" />
+    <Compile Include="IServiceUsuario.svc.cs">
+      <DependentUpon>IServiceUsuario.svc</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IServiceUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
