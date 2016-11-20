@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Facades
 {
-    class ComentarioFacade
+    class ComentarioFacade : BaseFacade
     {
     }
 }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace BusinessLayer.Facades
 {
 
-        public class AvaliacaoFacade
+        public class AvaliacaoFacade : BaseFacade
         {
             private AvaliacaoBO avaliacaoBo;
             private SqlServerDao dao;

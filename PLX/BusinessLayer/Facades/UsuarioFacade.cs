@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Facades
 {
-    public class UsuarioFacade
+    public class UsuarioFacade : BaseFacade
     {
 
         private UsuarioBO usuarioBo;

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Facades
 {
-    public class CategoriaFacade
+    public class CategoriaFacade : BaseFacade
     {
         private CategoriaBO categoriaBo;
         private SqlServerDao dao;

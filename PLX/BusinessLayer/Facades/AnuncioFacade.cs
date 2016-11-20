@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer.Tabelas
+namespace BusinessLayer.Facades
 {
-    public class AnuncioFacade
+    public class AnuncioFacade : BaseFacade
     {
 
         private AnuncioBO anuncioBo;
