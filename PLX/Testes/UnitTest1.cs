@@ -19,7 +19,7 @@ namespace Testes
         public void UsuarioTest()
         {
             UsuarioFacade facade = new UsuarioFacade();
-            facade.SalvarUsuario("Robert", "robert@robert.com", "123mudar");
+            facade.SalvarUsuario("Robert", "robert@robert.com", "123mudar", "tratar com fulano", 127798787 );
         }
         [TestMethod]
         public void AnuncioTest()

@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{66EE4D04-8F0B-4D3A-B614-0D582F6516DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLayerProject", "WebLayerProject\WebLayerProject.csproj", "{C253C4E5-9137-4B31-B7B1-2A7EECEC52E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66EE4D04-8F0B-4D3A-B614-0D582F6516DD} = {66EE4D04-8F0B-4D3A-B614-0D582F6516DD}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

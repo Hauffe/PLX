@@ -21,13 +21,16 @@ namespace BusinessLayer.Facades
             usuarioBo = new UsuarioBO(dao);
         }
 
-        public void SalvarUsuario(string nome, string email, string senha)
+        public void SalvarUsuario(string nome, string email, string senha, string contato, int telefone)
         {
             UsuarioDto a = new UsuarioDto();
             a.Nome = nome;
             a.Email = email;
             a.Senha = senha;
-            usuarioBo.SalvarUsuario(a);
+            a.Contato = contato;
+            a.Telefone = telefone;
+
+        usuarioBo.SalvarUsuario(a);
         }
     }
 }
