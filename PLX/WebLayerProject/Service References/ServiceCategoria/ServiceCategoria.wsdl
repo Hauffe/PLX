@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceUsuario" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
-  <wsp:Policy wsu:Id="WSHttpBinding_IServiceUsuario_policy">
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceCategoria" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IServiceCategoria_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -96,7 +96,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IServiceUsuario_SalvarUsuario_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IServiceCategoria_SalvarCategoria_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -115,7 +115,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IServiceUsuario_SalvarUsuario_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IServiceCategoria_SalvarCategoria_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -134,7 +134,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IServiceUsuario_ListarTodos_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IServiceCategoria_ListarTodos_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -153,7 +153,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IServiceUsuario_ListarTodos_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IServiceCategoria_ListarTodos_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -172,7 +172,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IServiceUsuario_buscarPorId_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IServiceCategoria_buscarPorId_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -191,7 +191,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IServiceUsuario_buscarPorId_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IServiceCategoria_buscarPorId_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -212,85 +212,85 @@
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="http://localhost:51360/ServiceUsuario.svc?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="http://localhost:51360/ServiceUsuario.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://localhost:51360/ServiceUsuario.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BusinessLayer.DTO" />
+      <xsd:import schemaLocation="http://localhost:51360/ServiceCategoria.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51360/ServiceCategoria.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51360/ServiceCategoria.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BusinessLayer.DTO" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IServiceUsuario_SalvarUsuario_InputMessage">
-    <wsdl:part name="parameters" element="tns:SalvarUsuario" />
+  <wsdl:message name="IServiceCategoria_SalvarCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:SalvarCategoria" />
   </wsdl:message>
-  <wsdl:message name="IServiceUsuario_SalvarUsuario_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SalvarUsuarioResponse" />
+  <wsdl:message name="IServiceCategoria_SalvarCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SalvarCategoriaResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceUsuario_ListarTodos_InputMessage">
+  <wsdl:message name="IServiceCategoria_ListarTodos_InputMessage">
     <wsdl:part name="parameters" element="tns:ListarTodos" />
   </wsdl:message>
-  <wsdl:message name="IServiceUsuario_ListarTodos_OutputMessage">
+  <wsdl:message name="IServiceCategoria_ListarTodos_OutputMessage">
     <wsdl:part name="parameters" element="tns:ListarTodosResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceUsuario_buscarPorId_InputMessage">
+  <wsdl:message name="IServiceCategoria_buscarPorId_InputMessage">
     <wsdl:part name="parameters" element="tns:buscarPorId" />
   </wsdl:message>
-  <wsdl:message name="IServiceUsuario_buscarPorId_OutputMessage">
+  <wsdl:message name="IServiceCategoria_buscarPorId_OutputMessage">
     <wsdl:part name="parameters" element="tns:buscarPorIdResponse" />
   </wsdl:message>
-  <wsdl:portType name="IServiceUsuario">
-    <wsdl:operation name="SalvarUsuario">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/SalvarUsuario" message="tns:IServiceUsuario_SalvarUsuario_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/SalvarUsuarioResponse" message="tns:IServiceUsuario_SalvarUsuario_OutputMessage" />
+  <wsdl:portType name="IServiceCategoria">
+    <wsdl:operation name="SalvarCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCategoria/SalvarCategoria" message="tns:IServiceCategoria_SalvarCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCategoria/SalvarCategoriaResponse" message="tns:IServiceCategoria_SalvarCategoria_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListarTodos">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/ListarTodos" message="tns:IServiceUsuario_ListarTodos_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/ListarTodosResponse" message="tns:IServiceUsuario_ListarTodos_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCategoria/ListarTodos" message="tns:IServiceCategoria_ListarTodos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCategoria/ListarTodosResponse" message="tns:IServiceCategoria_ListarTodos_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="buscarPorId">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/buscarPorId" message="tns:IServiceUsuario_buscarPorId_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/buscarPorIdResponse" message="tns:IServiceUsuario_buscarPorId_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCategoria/buscarPorId" message="tns:IServiceCategoria_buscarPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCategoria/buscarPorIdResponse" message="tns:IServiceCategoria_buscarPorId_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="WSHttpBinding_IServiceUsuario" type="tns:IServiceUsuario">
-    <wsp:PolicyReference URI="#WSHttpBinding_IServiceUsuario_policy" />
+  <wsdl:binding name="WSHttpBinding_IServiceCategoria" type="tns:IServiceCategoria">
+    <wsp:PolicyReference URI="#WSHttpBinding_IServiceCategoria_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="SalvarUsuario">
-      <soap12:operation soapAction="http://tempuri.org/IServiceUsuario/SalvarUsuario" style="document" />
+    <wsdl:operation name="SalvarCategoria">
+      <soap12:operation soapAction="http://tempuri.org/IServiceCategoria/SalvarCategoria" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_IServiceUsuario_SalvarUsuario_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IServiceCategoria_SalvarCategoria_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_IServiceUsuario_SalvarUsuario_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IServiceCategoria_SalvarCategoria_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ListarTodos">
-      <soap12:operation soapAction="http://tempuri.org/IServiceUsuario/ListarTodos" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IServiceCategoria/ListarTodos" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_IServiceUsuario_ListarTodos_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IServiceCategoria_ListarTodos_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_IServiceUsuario_ListarTodos_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IServiceCategoria_ListarTodos_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="buscarPorId">
-      <soap12:operation soapAction="http://tempuri.org/IServiceUsuario/buscarPorId" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IServiceCategoria/buscarPorId" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_IServiceUsuario_buscarPorId_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IServiceCategoria_buscarPorId_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_IServiceUsuario_buscarPorId_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_IServiceCategoria_buscarPorId_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="ServiceUsuario">
-    <wsdl:port name="WSHttpBinding_IServiceUsuario" binding="tns:WSHttpBinding_IServiceUsuario">
-      <soap12:address location="http://localhost:51360/ServiceUsuario.svc" />
+  <wsdl:service name="ServiceCategoria">
+    <wsdl:port name="WSHttpBinding_IServiceCategoria" binding="tns:WSHttpBinding_IServiceCategoria">
+      <soap12:address location="http://localhost:51360/ServiceCategoria.svc" />
       <wsa10:EndpointReference>
-        <wsa10:Address>http://localhost:51360/ServiceUsuario.svc</wsa10:Address>
+        <wsa10:Address>http://localhost:51360/ServiceCategoria.svc</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
           <Upn>Alexandre-PC\Alexandre</Upn>
         </Identity>

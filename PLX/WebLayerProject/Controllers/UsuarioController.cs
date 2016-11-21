@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -35,6 +36,24 @@ namespace WebLayerProject.Controllers
             }
         }
 
+        public async Task<ActionResult> BuscarPorId(int id)
+        {
 
+            using (ServiceUsuarioClient usuario = new ServiceUsuario.ServiceUsuarioClient())
+            {
+                var ret = await usuario.buscarPorIdAsync(id);
+                return View(AutoMapper.Mapper.Map<UsuarioVM>(ret));
+            }
+        }
+
+        public async Task<ActionResult> ListarTodos()
+        {
+
+            using (ServiceUsuarioClient usuario = new ServiceUsuario.ServiceUsuarioClient())
+            {
+                var ret = await usuario.ListarTodosAsync();
+                return View(AutoMapper.Mapper.Map<UsuarioVM[]>(ret));
+            }
+        }
     }
 }

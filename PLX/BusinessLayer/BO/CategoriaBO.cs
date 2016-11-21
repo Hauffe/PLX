@@ -39,7 +39,8 @@ namespace BusinessLayer.BO
 
         public List<CategoriaDto> BuscarTodos()
         {
-            return AutoMapper.Mapper.Map<List<CategoriaDto>>(Dao.Listar<Categoria>());
+            var ret = Dao.Listar<Categoria>();
+            return AutoMapper.Mapper.Map<List<CategoriaDto>>(ret);
         }
 
         public CategoriaDto BuscarPorId(int id)

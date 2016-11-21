@@ -28,5 +28,17 @@ namespace BusinessLayer.Facades
 
             categoriaBo.SalvarCategoria(c);
         }
+
+        public List<CategoriaDto> BuscarTodos()
+        {
+            return categoriaBo.BuscarTodos();
+        }
+
+        public CategoriaDto BuscarPorId(int id)
+        {
+            return categoriaBo.BuscarPorId(id);
+        }
+
+
     }
 }

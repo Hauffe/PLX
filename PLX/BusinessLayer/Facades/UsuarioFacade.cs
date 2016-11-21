@@ -32,5 +32,15 @@ namespace BusinessLayer.Facades
 
         usuarioBo.SalvarUsuario(a);
         }
+
+        public UsuarioDto BuscarPorId(int id)
+        {
+            return usuarioBo.BuscarPorId(id);
+        }
+
+        public List<UsuarioDto> BuscarTodos()
+        {
+            return usuarioBo.BuscarTodos();
+        }
     }
 }

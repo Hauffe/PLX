@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using BusinessLayer.DTO;
 
 namespace ServiceLayer
 {
@@ -13,5 +14,11 @@ namespace ServiceLayer
     {
         [OperationContract]
         void SalvarUsuario(string nome, string email, string senha, string contato, int telefone);
+
+        [OperationContract]
+        List<UsuarioDto> ListarTodos();
+
+        [OperationContract]
+        UsuarioDto buscarPorId(int id);
     }
 }

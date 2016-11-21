@@ -8,10 +8,260 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebLayerProject.ServiceUsuario {
+namespace WebLayerProject.ServiceCategoria {
     using System.Runtime.Serialization;
     using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CategoriaDto", Namespace="http://schemas.datacontract.org/2004/07/BusinessLayer.DTO")]
+    [System.SerializableAttribute()]
+    public partial class CategoriaDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WebLayerProject.ServiceCategoria.AnuncioDto[] AnunciosDtoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WebLayerProject.ServiceCategoria.CategoriaDto[] CategoriasDtoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DescricaoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NomeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WebLayerProject.ServiceCategoria.AnuncioDto[] AnunciosDto {
+            get {
+                return this.AnunciosDtoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AnunciosDtoField, value) != true)) {
+                    this.AnunciosDtoField = value;
+                    this.RaisePropertyChanged("AnunciosDto");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WebLayerProject.ServiceCategoria.CategoriaDto[] CategoriasDto {
+            get {
+                return this.CategoriasDtoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CategoriasDtoField, value) != true)) {
+                    this.CategoriasDtoField = value;
+                    this.RaisePropertyChanged("CategoriasDto");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Descricao {
+            get {
+                return this.DescricaoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DescricaoField, value) != true)) {
+                    this.DescricaoField = value;
+                    this.RaisePropertyChanged("Descricao");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nome {
+            get {
+                return this.NomeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NomeField, value) != true)) {
+                    this.NomeField = value;
+                    this.RaisePropertyChanged("Nome");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="AnuncioDto", Namespace="http://schemas.datacontract.org/2004/07/BusinessLayer.DTO")]
+    [System.SerializableAttribute()]
+    public partial class AnuncioDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WebLayerProject.ServiceCategoria.CategoriaDto CategoriaDtoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WebLayerProject.ServiceCategoria.ComentarioDto[] ComentariosDtoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DescricaoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ImagemField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double PrecoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TituloField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WebLayerProject.ServiceCategoria.UsuarioDto UsuarioDtoField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WebLayerProject.ServiceCategoria.CategoriaDto CategoriaDto {
+            get {
+                return this.CategoriaDtoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CategoriaDtoField, value) != true)) {
+                    this.CategoriaDtoField = value;
+                    this.RaisePropertyChanged("CategoriaDto");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WebLayerProject.ServiceCategoria.ComentarioDto[] ComentariosDto {
+            get {
+                return this.ComentariosDtoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ComentariosDtoField, value) != true)) {
+                    this.ComentariosDtoField = value;
+                    this.RaisePropertyChanged("ComentariosDto");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Descricao {
+            get {
+                return this.DescricaoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DescricaoField, value) != true)) {
+                    this.DescricaoField = value;
+                    this.RaisePropertyChanged("Descricao");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Imagem {
+            get {
+                return this.ImagemField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ImagemField, value) != true)) {
+                    this.ImagemField = value;
+                    this.RaisePropertyChanged("Imagem");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Preco {
+            get {
+                return this.PrecoField;
+            }
+            set {
+                if ((this.PrecoField.Equals(value) != true)) {
+                    this.PrecoField = value;
+                    this.RaisePropertyChanged("Preco");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((this.StatusField.Equals(value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Titulo {
+            get {
+                return this.TituloField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TituloField, value) != true)) {
+                    this.TituloField = value;
+                    this.RaisePropertyChanged("Titulo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WebLayerProject.ServiceCategoria.UsuarioDto UsuarioDto {
+            get {
+                return this.UsuarioDtoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UsuarioDtoField, value) != true)) {
+                    this.UsuarioDtoField = value;
+                    this.RaisePropertyChanged("UsuarioDto");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
@@ -23,13 +273,13 @@ namespace WebLayerProject.ServiceUsuario {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.AnuncioDto[] AnunciosDtoField;
+        private WebLayerProject.ServiceCategoria.AnuncioDto[] AnunciosDtoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.AvaliacaoDto[] AvaliacoesDtoField;
+        private WebLayerProject.ServiceCategoria.AvaliacaoDto[] AvaliacoesDtoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.ComentarioDto[] ComentariosDtoField;
+        private WebLayerProject.ServiceCategoria.ComentarioDto[] ComentariosDtoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ContatoField;
@@ -57,7 +307,7 @@ namespace WebLayerProject.ServiceUsuario {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.AnuncioDto[] AnunciosDto {
+        public WebLayerProject.ServiceCategoria.AnuncioDto[] AnunciosDto {
             get {
                 return this.AnunciosDtoField;
             }
@@ -70,7 +320,7 @@ namespace WebLayerProject.ServiceUsuario {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.AvaliacaoDto[] AvaliacoesDto {
+        public WebLayerProject.ServiceCategoria.AvaliacaoDto[] AvaliacoesDto {
             get {
                 return this.AvaliacoesDtoField;
             }
@@ -83,7 +333,7 @@ namespace WebLayerProject.ServiceUsuario {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.ComentarioDto[] ComentariosDto {
+        public WebLayerProject.ServiceCategoria.ComentarioDto[] ComentariosDto {
             get {
                 return this.ComentariosDtoField;
             }
@@ -172,36 +422,21 @@ namespace WebLayerProject.ServiceUsuario {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="AnuncioDto", Namespace="http://schemas.datacontract.org/2004/07/BusinessLayer.DTO")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ComentarioDto", Namespace="http://schemas.datacontract.org/2004/07/BusinessLayer.DTO")]
     [System.SerializableAttribute()]
-    public partial class AnuncioDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class ComentarioDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.CategoriaDto CategoriaDtoField;
+        private WebLayerProject.ServiceCategoria.AnuncioDto AnuncioDtoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.ComentarioDto[] ComentariosDtoField;
+        private string ConteudoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescricaoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ImagemField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double PrecoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TituloField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.UsuarioDto UsuarioDtoField;
+        private WebLayerProject.ServiceCategoria.UsuarioDto UsuarioDtoField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -214,98 +449,33 @@ namespace WebLayerProject.ServiceUsuario {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.CategoriaDto CategoriaDto {
+        public WebLayerProject.ServiceCategoria.AnuncioDto AnuncioDto {
             get {
-                return this.CategoriaDtoField;
+                return this.AnuncioDtoField;
             }
             set {
-                if ((object.ReferenceEquals(this.CategoriaDtoField, value) != true)) {
-                    this.CategoriaDtoField = value;
-                    this.RaisePropertyChanged("CategoriaDto");
+                if ((object.ReferenceEquals(this.AnuncioDtoField, value) != true)) {
+                    this.AnuncioDtoField = value;
+                    this.RaisePropertyChanged("AnuncioDto");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.ComentarioDto[] ComentariosDto {
+        public string Conteudo {
             get {
-                return this.ComentariosDtoField;
+                return this.ConteudoField;
             }
             set {
-                if ((object.ReferenceEquals(this.ComentariosDtoField, value) != true)) {
-                    this.ComentariosDtoField = value;
-                    this.RaisePropertyChanged("ComentariosDto");
+                if ((object.ReferenceEquals(this.ConteudoField, value) != true)) {
+                    this.ConteudoField = value;
+                    this.RaisePropertyChanged("Conteudo");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Descricao {
-            get {
-                return this.DescricaoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescricaoField, value) != true)) {
-                    this.DescricaoField = value;
-                    this.RaisePropertyChanged("Descricao");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Imagem {
-            get {
-                return this.ImagemField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ImagemField, value) != true)) {
-                    this.ImagemField = value;
-                    this.RaisePropertyChanged("Imagem");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public double Preco {
-            get {
-                return this.PrecoField;
-            }
-            set {
-                if ((this.PrecoField.Equals(value) != true)) {
-                    this.PrecoField = value;
-                    this.RaisePropertyChanged("Preco");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Status {
-            get {
-                return this.StatusField;
-            }
-            set {
-                if ((this.StatusField.Equals(value) != true)) {
-                    this.StatusField = value;
-                    this.RaisePropertyChanged("Status");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Titulo {
-            get {
-                return this.TituloField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TituloField, value) != true)) {
-                    this.TituloField = value;
-                    this.RaisePropertyChanged("Titulo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.UsuarioDto UsuarioDto {
+        public WebLayerProject.ServiceCategoria.UsuarioDto UsuarioDto {
             get {
                 return this.UsuarioDtoField;
             }
@@ -340,7 +510,7 @@ namespace WebLayerProject.ServiceUsuario {
         private double NotaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.UsuarioDto UsuarioDtoField;
+        private WebLayerProject.ServiceCategoria.UsuarioDto UsuarioDtoField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -366,7 +536,7 @@ namespace WebLayerProject.ServiceUsuario {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.UsuarioDto UsuarioDto {
+        public WebLayerProject.ServiceCategoria.UsuarioDto UsuarioDto {
             get {
                 return this.UsuarioDtoField;
             }
@@ -388,247 +558,77 @@ namespace WebLayerProject.ServiceUsuario {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ComentarioDto", Namespace="http://schemas.datacontract.org/2004/07/BusinessLayer.DTO")]
-    [System.SerializableAttribute()]
-    public partial class ComentarioDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceCategoria.IServiceCategoria")]
+    public interface IServiceCategoria {
         
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCategoria/SalvarCategoria", ReplyAction="http://tempuri.org/IServiceCategoria/SalvarCategoriaResponse")]
+        void SalvarCategoria(string Nome, string Descricao);
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.AnuncioDto AnuncioDtoField;
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCategoria/SalvarCategoria", ReplyAction="http://tempuri.org/IServiceCategoria/SalvarCategoriaResponse")]
+        System.Threading.Tasks.Task SalvarCategoriaAsync(string Nome, string Descricao);
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ConteudoField;
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCategoria/ListarTodos", ReplyAction="http://tempuri.org/IServiceCategoria/ListarTodosResponse")]
+        WebLayerProject.ServiceCategoria.CategoriaDto[] ListarTodos();
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.UsuarioDto UsuarioDtoField;
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCategoria/ListarTodos", ReplyAction="http://tempuri.org/IServiceCategoria/ListarTodosResponse")]
+        System.Threading.Tasks.Task<WebLayerProject.ServiceCategoria.CategoriaDto[]> ListarTodosAsync();
         
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCategoria/buscarPorId", ReplyAction="http://tempuri.org/IServiceCategoria/buscarPorIdResponse")]
+        WebLayerProject.ServiceCategoria.CategoriaDto buscarPorId(int id);
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.AnuncioDto AnuncioDto {
-            get {
-                return this.AnuncioDtoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AnuncioDtoField, value) != true)) {
-                    this.AnuncioDtoField = value;
-                    this.RaisePropertyChanged("AnuncioDto");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Conteudo {
-            get {
-                return this.ConteudoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ConteudoField, value) != true)) {
-                    this.ConteudoField = value;
-                    this.RaisePropertyChanged("Conteudo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.UsuarioDto UsuarioDto {
-            get {
-                return this.UsuarioDtoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UsuarioDtoField, value) != true)) {
-                    this.UsuarioDtoField = value;
-                    this.RaisePropertyChanged("UsuarioDto");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CategoriaDto", Namespace="http://schemas.datacontract.org/2004/07/BusinessLayer.DTO")]
-    [System.SerializableAttribute()]
-    public partial class CategoriaDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.AnuncioDto[] AnunciosDtoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private WebLayerProject.ServiceUsuario.CategoriaDto[] CategoriasDtoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescricaoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NomeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.AnuncioDto[] AnunciosDto {
-            get {
-                return this.AnunciosDtoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AnunciosDtoField, value) != true)) {
-                    this.AnunciosDtoField = value;
-                    this.RaisePropertyChanged("AnunciosDto");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public WebLayerProject.ServiceUsuario.CategoriaDto[] CategoriasDto {
-            get {
-                return this.CategoriasDtoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CategoriasDtoField, value) != true)) {
-                    this.CategoriasDtoField = value;
-                    this.RaisePropertyChanged("CategoriasDto");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Descricao {
-            get {
-                return this.DescricaoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescricaoField, value) != true)) {
-                    this.DescricaoField = value;
-                    this.RaisePropertyChanged("Descricao");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Nome {
-            get {
-                return this.NomeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NomeField, value) != true)) {
-                    this.NomeField = value;
-                    this.RaisePropertyChanged("Nome");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceCategoria/buscarPorId", ReplyAction="http://tempuri.org/IServiceCategoria/buscarPorIdResponse")]
+        System.Threading.Tasks.Task<WebLayerProject.ServiceCategoria.CategoriaDto> buscarPorIdAsync(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceUsuario.IServiceUsuario")]
-    public interface IServiceUsuario {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceUsuario/SalvarUsuario", ReplyAction="http://tempuri.org/IServiceUsuario/SalvarUsuarioResponse")]
-        void SalvarUsuario(string nome, string email, string senha, string contato, int telefone);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceUsuario/SalvarUsuario", ReplyAction="http://tempuri.org/IServiceUsuario/SalvarUsuarioResponse")]
-        System.Threading.Tasks.Task SalvarUsuarioAsync(string nome, string email, string senha, string contato, int telefone);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceUsuario/ListarTodos", ReplyAction="http://tempuri.org/IServiceUsuario/ListarTodosResponse")]
-        WebLayerProject.ServiceUsuario.UsuarioDto[] ListarTodos();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceUsuario/ListarTodos", ReplyAction="http://tempuri.org/IServiceUsuario/ListarTodosResponse")]
-        System.Threading.Tasks.Task<WebLayerProject.ServiceUsuario.UsuarioDto[]> ListarTodosAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceUsuario/buscarPorId", ReplyAction="http://tempuri.org/IServiceUsuario/buscarPorIdResponse")]
-        WebLayerProject.ServiceUsuario.UsuarioDto buscarPorId(int id);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceUsuario/buscarPorId", ReplyAction="http://tempuri.org/IServiceUsuario/buscarPorIdResponse")]
-        System.Threading.Tasks.Task<WebLayerProject.ServiceUsuario.UsuarioDto> buscarPorIdAsync(int id);
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceUsuarioChannel : WebLayerProject.ServiceUsuario.IServiceUsuario, System.ServiceModel.IClientChannel {
+    public interface IServiceCategoriaChannel : WebLayerProject.ServiceCategoria.IServiceCategoria, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceUsuarioClient : System.ServiceModel.ClientBase<WebLayerProject.ServiceUsuario.IServiceUsuario>, WebLayerProject.ServiceUsuario.IServiceUsuario {
+    public partial class ServiceCategoriaClient : System.ServiceModel.ClientBase<WebLayerProject.ServiceCategoria.IServiceCategoria>, WebLayerProject.ServiceCategoria.IServiceCategoria {
         
-        public ServiceUsuarioClient() {
+        public ServiceCategoriaClient() {
         }
         
-        public ServiceUsuarioClient(string endpointConfigurationName) : 
+        public ServiceCategoriaClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public ServiceUsuarioClient(string endpointConfigurationName, string remoteAddress) : 
+        public ServiceCategoriaClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServiceUsuarioClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ServiceCategoriaClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServiceUsuarioClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ServiceCategoriaClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public void SalvarUsuario(string nome, string email, string senha, string contato, int telefone) {
-            base.Channel.SalvarUsuario(nome, email, senha, contato, telefone);
+        public void SalvarCategoria(string Nome, string Descricao) {
+            base.Channel.SalvarCategoria(Nome, Descricao);
         }
         
-        public System.Threading.Tasks.Task SalvarUsuarioAsync(string nome, string email, string senha, string contato, int telefone) {
-            return base.Channel.SalvarUsuarioAsync(nome, email, senha, contato, telefone);
+        public System.Threading.Tasks.Task SalvarCategoriaAsync(string Nome, string Descricao) {
+            return base.Channel.SalvarCategoriaAsync(Nome, Descricao);
         }
         
-        public WebLayerProject.ServiceUsuario.UsuarioDto[] ListarTodos() {
+        public WebLayerProject.ServiceCategoria.CategoriaDto[] ListarTodos() {
             return base.Channel.ListarTodos();
         }
         
-        public System.Threading.Tasks.Task<WebLayerProject.ServiceUsuario.UsuarioDto[]> ListarTodosAsync() {
+        public System.Threading.Tasks.Task<WebLayerProject.ServiceCategoria.CategoriaDto[]> ListarTodosAsync() {
             return base.Channel.ListarTodosAsync();
         }
         
-        public WebLayerProject.ServiceUsuario.UsuarioDto buscarPorId(int id) {
+        public WebLayerProject.ServiceCategoria.CategoriaDto buscarPorId(int id) {
             return base.Channel.buscarPorId(id);
         }
         
-        public System.Threading.Tasks.Task<WebLayerProject.ServiceUsuario.UsuarioDto> buscarPorIdAsync(int id) {
+        public System.Threading.Tasks.Task<WebLayerProject.ServiceCategoria.CategoriaDto> buscarPorIdAsync(int id) {
             return base.Channel.buscarPorIdAsync(id);
         }
     }
