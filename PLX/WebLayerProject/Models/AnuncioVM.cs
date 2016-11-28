@@ -7,6 +7,7 @@ namespace WebLayerProject.Models
 {
     public class AnuncioVM
     {
+        public int Id { get; set; }
         public String Descricao { get; set; }
         public String Titulo { get; set; }
         public Double Preco { get; set; }

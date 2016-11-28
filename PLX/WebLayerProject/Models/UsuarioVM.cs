@@ -7,6 +7,7 @@ namespace WebLayerProject.Models
 {
     public class UsuarioVM
     {
+        public int Id { get; set; }
         public String Nome { get; set; }
         public String Contato { get; set; }
         public int Telefone { get; set; }

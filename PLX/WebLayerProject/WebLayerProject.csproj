@@ -48,6 +48,14 @@
       <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -127,6 +135,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\MapperConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AnuncioController.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
@@ -139,6 +148,11 @@
     <Compile Include="Models\ComentarioVM.cs" />
     <Compile Include="Models\UsuarioVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceAnuncio\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceCategoria\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -170,19 +184,26 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <None Include="Service References\ServiceCategoria\ServiceCategoria.wsdl" />
-    <None Include="Service References\ServiceCategoria\ServiceCategoria.xsd">
+    <None Include="Service References\ServiceAnuncio\ServiceAnuncio.wsdl" />
+    <None Include="Service References\ServiceAnuncio\ServiceAnuncio.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceCategoria\ServiceCategoria1.xsd">
+    <None Include="Service References\ServiceAnuncio\ServiceAnuncio1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceCategoria\ServiceCategoria2.xsd">
+    <None Include="Service References\ServiceAnuncio\ServiceAnuncio2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\ServiceCategoria\WebLayerProject.ServiceCategoria.CategoriaDto.datasource">
+    <Content Include="Service References\ServiceAnuncio\WebLayerProject.ServiceAnuncio.AnuncioDto.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\ServiceCategoria\ServiceCategoria.disco" />
+    <None Include="Service References\ServiceCategoria\configuration91.svcinfo" />
+    <None Include="Service References\ServiceCategoria\configuration.svcinfo" />
+    <None Include="Service References\ServiceCategoria\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Service References\ServiceUsuario\ServiceUsuario.disco" />
     <None Include="Service References\ServiceUsuario\configuration91.svcinfo" />
     <None Include="Service References\ServiceUsuario\configuration.svcinfo" />
@@ -190,10 +211,10 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\ServiceCategoria\ServiceCategoria.disco" />
-    <None Include="Service References\ServiceCategoria\configuration91.svcinfo" />
-    <None Include="Service References\ServiceCategoria\configuration.svcinfo" />
-    <None Include="Service References\ServiceCategoria\Reference.svcmap">
+    <None Include="Service References\ServiceAnuncio\ServiceAnuncio.disco" />
+    <None Include="Service References\ServiceAnuncio\configuration91.svcinfo" />
+    <None Include="Service References\ServiceAnuncio\configuration.svcinfo" />
+    <None Include="Service References\ServiceAnuncio\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -212,6 +233,24 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Usuario\NovoUsuario.cshtml" />
+    <Content Include="Views\Categoria\NovaCategoria.cshtml" />
+    <Content Include="Views\Categoria\BuscarPorId.cshtml" />
+    <Content Include="Views\Categoria\ListarTodos.cshtml" />
+    <Content Include="Views\Usuario\ListarTodos.cshtml" />
+    <Content Include="Views\Usuario\BuscarPorId.cshtml" />
+    <None Include="Service References\ServiceCategoria\ServiceCategoria.wsdl" />
+    <None Include="Service References\ServiceCategoria\ServiceCategoria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceCategoria\ServiceCategoria1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceCategoria\ServiceCategoria2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ServiceCategoria\WebLayerProject.ServiceCategoria.CategoriaDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\ServiceUsuario\ServiceUsuario.wsdl" />
     <None Include="Service References\ServiceUsuario\ServiceUsuario.xsd">
       <SubType>Designer</SubType>
@@ -225,11 +264,9 @@
     <Content Include="Service References\ServiceUsuario\WebLayerProject.ServiceUsuario.UsuarioDto.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Views\Usuario\BuscarPorId.cshtml" />
-    <Content Include="Views\Categoria\NovaCategoria.cshtml" />
-    <Content Include="Views\Categoria\BuscarPorId.cshtml" />
-    <Content Include="Views\Categoria\ListarTodos.cshtml" />
-    <Content Include="Views\Usuario\ListarTodos.cshtml" />
+    <Content Include="Views\Anuncio\NovoAnuncio.cshtml" />
+    <Content Include="Views\Anuncio\BuscarPorId.cshtml" />
+    <Content Include="Views\Anuncio\ListarTodos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -249,6 +286,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceAnuncio\" />
     <WCFMetadataStorage Include="Service References\ServiceCategoria\" />
     <WCFMetadataStorage Include="Service References\ServiceUsuario\" />
   </ItemGroup>

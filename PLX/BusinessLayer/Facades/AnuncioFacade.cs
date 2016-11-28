@@ -43,5 +43,21 @@ namespace BusinessLayer.Facades
             
             anuncioBo.SalvarAnuncio(a);
         }
+
+
+        public List<AnuncioDto> BuscarTodos()
+        {
+            return anuncioBo.BuscarTodos();
+        }
+
+        public List<AnuncioDto> BuscarPorTitulo(string titulo)
+        {
+            return anuncioBo.BuscarPorTitulo(titulo);
+        }
+
+        public AnuncioDto BuscarPorId(int id)
+        {
+            return anuncioBo.BuscarPorId(id);
+        }
     }
 }
